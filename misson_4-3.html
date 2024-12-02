@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UFT-8">
+    <title>misson_4-3</title>
+</head>
+<body>
+    <div id="omikuji">ここに表示</div>
+    <script>
+        var omikuji=new Array("大吉","中吉","小吉");
+
+        var number1 =Math.random();
+        var number2=number1*3;
+        var number =Math.floor(number2);
+        var massage=omikuji[number];
+
+        var object=document.getElementById("omikuji");
+        object.innerText=massage;
+    </script>
+</body>
+</html>
